@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City Engineering College</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <img src="https://shorturl.at/ABRHu" alt="Logo" height="40">
+      <a class="navbar-brand" href="#">City Engineering College</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Students Corner</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Syllabus</a></li>
+                <li><a class="dropdown-item" href="#">Announcements</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">About</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5">
+    <img src="https://ums.cityengineeringcollege.ac.in/public/frontPage/img/CIT-img.jpeg" class="img-fluid mb-4" height="100px" width="1000px" alt="Banner">
+
+    <div class="card-group">
+      <div class="card">
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="City Campus">
+        <div class="card-body">
+          <h5 class="card-title">City Campus</h5>
+          <p class="card-text">City Engineering College was started in 2001 by the Jayanagar Education Society. The college is located off Kanakapura Main Road, near Bangalore. The college is the sister project of AMC Engineering College, Bangalore. It started a civil engineering branch in the 2011–12 academic year.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLvJKjjgSlFYnX2_dE-UiyNGzHaGExM2W3g&s" class="card-img-top" alt="About Us">
+        <div class="card-body">
+          <h5 class="card-title">About Us</h5>
+          <p class="card-text">City Engineering College (CEC), established under Jayanagar Education Society by Dr K.R Paramahamsa, Chairman in the year 2001. CEC is one of the most sought-after colleges by students from across the country for Engineering and Management Education. The college believes in providing high-quality education to prospective professionals of the country.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2lACsSYV_bXf6Bab080bzwf0pL0voFpWu4A&s" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">More Info</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
